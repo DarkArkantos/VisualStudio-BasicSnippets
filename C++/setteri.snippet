@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>setteri</Title>
+            <Shortcut>setteri</Shortcut>
+            <Description>Creates the implementation of a setter</Description>
+            <Author>Alejandro</Author>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal>
+					<ID>type</ID>
+					<ToolTip>Type of the property</ToolTip>
+					<Default>int</Default>
+				</Literal>
+
+                <Literal>
+					<ID>class</ID>
+					<ToolTip>Class name</ToolTip>
+					<Default>Class</Default>
+				</Literal>
+
+				<Literal>
+					<ID>property</ID>
+					<ToolTip>Property name</ToolTip>
+					<Default>my_propery</Default>
+				</Literal>
+
+                
+                
+
+			</Declarations>
+            <Code Language="cpp">
+                <![CDATA[
+                void $class$::set_$property$($type$ $property$){
+                    _$property$ = $property$;
+                }
+                $selected$$end$          
+                ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>prop</Title>
+            <Shortcut>prop</Shortcut>
+            <Description>Creates a private attribute and access and mutators methods</Description>
+            <Author>Alejandro</Author>
+        </Header>
+        <Snippet>
+            <Declarations>
+				<Literal>
+					<ID>property</ID>
+					<ToolTip>Property name</ToolTip>
+					<Default>my_propery</Default>
+				</Literal>
+
+                <Literal>
+					<ID>type</ID>
+					<ToolTip>Type of the property</ToolTip>
+					<Default>int</Default>
+				</Literal>
+
+			</Declarations>
+            <Code Language="cpp">
+                <![CDATA[
+                public:
+                    $type$ get_$property$();
+                    void set_$property$($type$);
+
+                private:
+                    $type$ _$property$;    
+                    $selected$$end$          
+                ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
